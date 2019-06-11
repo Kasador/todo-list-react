@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodoItems from './TodoItems';
 import './TodoList.css';
+import { catchClause } from '@babel/types';
 
 class TodoList extends Component {
     constructor(props) {
@@ -51,11 +52,17 @@ class TodoList extends Component {
             color: '#333',
             padding: '10px'
         }
+        const styles1 = {
+            fontSize: '12px',
+            color: '#777',
+            marginBottom: '10px'
+        }
         
         return (
             <div className="todoListMain">
                 <div className="header">
                     <h1 style={styles}>Simple Todo List Application</h1>
+                    <span style={styles1}>click to delete items.</span>
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
                             placeholder="Enter Task"></input>

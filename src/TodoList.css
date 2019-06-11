@@ -14,13 +14,13 @@
     font-size: 16px;
     margin: 10px;
     margin-right: 0px;
-    background-color: #0066ff;
+    background-color: lightcoral;
     color: #fff;
-    border: 2px solid #0066ff;
+    border: 2px solid lightcoral;
 }
 .todoListMain .header button:hover {
-    background-color: #003399;
-    border: 2px solid #003399;
+    background-color: red;
+    border: 2px solid red;
     cursor: pointer;
 }
 .todoListMain .theList li {
@@ -34,7 +34,7 @@
     transition: background-color .2s ease-out;
 }
 .todoListMain .theList li:hover {
-    background-color: pink;
+    background-color: salmon;
     cursor: pointer;
 }
 ul.theList {
