@@ -62,7 +62,7 @@ class TodoList extends Component {
             <div className="todoListMain">
                 <div className="header">
                     <h1 style={styles}>Simple Todo List Application</h1>
-                    <span style={styles1}>click to delete items.</span>
+                    <span style={styles1}>click to delete items</span>
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
                             placeholder="Enter Task"></input>
