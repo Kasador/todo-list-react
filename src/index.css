@@ -5,5 +5,5 @@ body {
 }
 #root {
     display: flex;
-    justify-content: flex;
+    justify-content: center;
 }

@@ -46,9 +46,16 @@ class TodoList extends Component {
     }
 
     render() {
+        const styles = {
+            borderBottom: '2px solid #333',
+            color: '#333',
+            padding: '10px'
+        }
+        
         return (
             <div className="todoListMain">
                 <div className="header">
+                    <h1 style={styles}>Simple Todo List Application</h1>
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
                             placeholder="Enter Task"></input>
